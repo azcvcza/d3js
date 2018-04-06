@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- saved from url=(0103)file:///C:/Program%20Files%20(x86)/Apache%20Software%20Foundation/Apache2.2/WorkSpace/d3Test/basic.html -->
+
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <title>testD3-18-update.html</title>
+        <title>barchart</title>
 
     </head>
     <body>
@@ -103,20 +103,7 @@ svg.selectAll("rect")//选中空元素，表示即将创建这样的元素
         .duration(1000)
         .attr("fill","lightgreen");
     });
-/*svg.selectAll("line")
-    .data(dataset,key)
-    .enter()
-    .append("line")
-    .attr("x1",function(d,i){return xScale(d)+(i+1)*30;})
-    .attr("y1", function(d) {//设置纵坐标，纵坐标正方向是从上往下的，所以条有多长就要设置起点是相对于h再向上移动条长
 
-            return yScale(d.value);
-    })
-    .attr("x2",function(d,i){return xScale(d)+(i+1)*30;})
-    .attr("y2",function(d,i){return 600; })
-    .attr("stroke","black")
-    .attr("stroke-width",1)
-*/
 //为条加上数值
 svg.selectAll("text")
     .data(dataset,key)
@@ -143,7 +130,7 @@ svg.selectAll("text")
     d3.selectAll("p")//原方法只select("p") 有一个bug，文档里说select只返回第一个元素，因此add 和remove谁排在网页前面谁触发，改成selectAll即可解决;
       .on("click",function(){
             var paraID = d3.select(this).attr("id");
-            //console.log("paraID:"+paraID);
+            
             if(paraID == "add"){
                 var maxValue = 22;
                 var newNumber = Math.floor(Math.random()*maxValue);
@@ -152,7 +139,7 @@ svg.selectAll("text")
                     key:lastKeyValue+1,
                     value:newNumber
                 });
-                //console.log('come here');
+                
                 xScale.domain(d3.range(dataset.length));
                 var bar = svg.selectAll("rect")
                              .data(dataset,key);
@@ -194,7 +181,7 @@ svg.selectAll("text")
 
             }
         else if(paraID=="remove"){
-            console.log("go there")
+            
             dataset.shift();
             xScale.domain(d3.range(dataset.length));
             var bars = svg.selectAll("rect").data(dataset,key);
