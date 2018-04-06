@@ -15,8 +15,7 @@
 -------------------------------------------graph are made in d3.v4----------------------------------------
 ## Example
 1.barchart 
-![barchart]
-<img src="https://github.com/azcvcza/d3js/picture/barchart.png" align="left" hspace="10" vspace="6">
+![barchart picture](https://github.com/azcvcza/d3js/picture/barchart.png) 
 
 
 ## DownLoad
