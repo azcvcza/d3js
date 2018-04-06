@@ -18,5 +18,6 @@
 ![barchart](https://github.com/azcvcza/d3js/picture/barchart.png)
 
 
-##clone
-just download *chart.html and d3.js ,put them together ,view in explorer
+## DownLoad
+just download *chart.html and d3.js ,
+put them together ,view in explorer
