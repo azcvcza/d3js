@@ -13,7 +13,7 @@
 * [Wiki](https://github.com/d3/d3/wiki)
 
 -------------------------------------------graph are made in d3.v4----------------------------------------
-## example
+## Example
 1.barchart 
 ![barchart](https://github.com/azcvcza/d3js/picture/barchart.png)
 
