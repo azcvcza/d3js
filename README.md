@@ -15,9 +15,14 @@
 -------------------------------------------graph are made in d3.v4----------------------------------------
 ## Example
 1.barchart 
-![barchart picture](https://github.com/azcvcza/d3js/tree/master/picture/barchart.png) 
+<img src="https://github.com/azcvcza/d3js/blob/master/barchart.png"  hspace="10" vspace="6">
 
 
-## DownLoad
+## 英文
 just download *chart.html and d3.js ,
 put them together ,view in explorer
+
+
+## 中文
+将图表和d3.js一起下载，放在同一目录下
+即可在浏览器中查看
